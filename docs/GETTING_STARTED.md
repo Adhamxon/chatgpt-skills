@@ -4,34 +4,35 @@
 
 1. Open [ChatGPT](https://chat.openai.com)
 2. Click on your profile picture → **My GPTs** → **Create a GPT**
-3. You'll see two panels: **Create** (conversational builder) and **Configure** (manual settings)
+3. Click the **Configure** tab
 
-### Using the Configure Panel
+### Creating Your GPT
 
-1. Click the **Configure** tab
-2. Fill in:
-   - **Name**: Use the `name` field from the JSON config
-   - **Description**: Use the `description` field
-   - **Instructions**: Copy the entire `instructions` field from the JSON file
-   - **Conversation starters**: Add each entry from `conversation_starters`
-3. **Capabilities**: Toggle Web Browsing, DALL-E Image Generation, and Code Interpreter as needed
-4. **Knowledge**: Enable file uploads if `file_uploads` is `true`
-5. Click **Create** → **Confirm**
+1. **Name**: Use the name from the config file (e.g., "Architecture & Design Pro")
+2. **Description**: Copy the description field
+3. **Instructions**: Copy the entire block under `## INSTRUCTIONS` and paste into the Instructions field
+4. **Conversation starters**: Add each entry from the `## CONVERSATION STARTERS` section
+5. **Capabilities**: Enable Web Browsing and Code Interpreter for all GPTs, DALL-E for design-related GPTs
+6. Click **Create** → **Confirm**
 
-### Quick Load via Conversation
+## Available GPTs (13)
 
-Alternatively, paste the entire JSON file into the **Create** (conversational builder) panel and say: "Please load these GPT configuration details."
+| GPT | Best For |
+|-----|----------|
+| **Architecture & Design Pro** | System design, Clean Architecture, DDD, refactoring |
+| **Frontend Development Pro** | React, TypeScript, Three.js, Tailwind, tRPC |
+| **Backend & API Pro** | API design, Supabase, message queues, Terraform |
+| **Mobile & iOS Pro** | Swift, SwiftUI, iOS development, debugging |
+| **Project Management Pro** | OKRs, PRDs, user stories, sprint planning, GTM |
+| **DevOps & Cloud Pro** | GCP, Docker, Kubernetes, BigQuery, CI/CD |
+| **Security & Testing Pro** | OWASP, API security, penetration testing |
+| **Code Quality & Review Pro** | Code review, TDD, debugging, refactoring |
+| **AI & LLM Development Pro** | Claude API, Gemini API, MCP servers, RAG |
+| **Documentation & Design Pro** | Figma, documents, slides, spreadsheets, PDFs |
+| **Git & Workflow Pro** | Git, conventional commits, CI/CD automation |
+| **Browser & Debugging Pro** | Playwright, E2E testing, Sentry |
+| **Developer Productivity Pro** | Obsidian, teaching, diagnostics, handoff |
 
 ## Files Included
 
-| File | Description |
-|------|-------------|
-| `custom-gpts/fullstack-dev-gpt.json` | Full Stack Developer GPT |
-| `custom-gpts/code-reviewer-gpt.json` | Code Reviewer GPT |
-| `custom-gpts/devops-engineer-gpt.json` | DevOps Engineer GPT |
-| `custom-gpts/tdd-developer-gpt.json` | TDD Developer GPT |
-| `custom-gpts/architect-gpt.json` | Software Architect GPT |
-
-## Customization
-
-Edit any JSON file to adjust the instructions, add tools, or modify conversation starters. The format follows OpenAI's GPT manifest specification.
+All 13 GPT configs are in `custom-gpts/` directory as Markdown files — open any file, copy the Instructions block, and paste into ChatGPT.
