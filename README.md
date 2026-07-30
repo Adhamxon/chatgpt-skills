@@ -1,6 +1,6 @@
 # ChatGPT Skills — Custom GPT Configurations
 
-A collection of ready-to-use **Custom GPT** configuration files for ChatGPT (GPT-4 / GPT-4o). Each config turns ChatGPT into a specialized engineering assistant — no prompt engineering required.
+A **massive collection of 13 Custom GPT configuration files** for ChatGPT (GPT-4 / GPT-4o). Each GPT is an expert in a specific domain, powered by **384 skills** from the [opencode-ultimate-skills](https://github.com/Adhamxon/opencode-ultimate-skills) project. No prompt engineering required — just create the GPT and start using it.
 
 ## How Custom GPTs Work
 
@@ -33,7 +33,7 @@ Each JSON file in `custom-gpts/` contains:
 
 ## What's Inside
 
-- `custom-gpts/` — 5 GPT configs (see table below), converted to a simple copy-paste format
+- `custom-gpts/` — **13 GPT configs** (see table below), ready to copy-paste into ChatGPT
 - `GPT_CREATION_GUIDE.md` — Visual step-by-step guide to create a GPT from these files
 - `docs/GETTING_STARTED.md` — Quick start reference
 - `scripts/setup.bat` — Windows setup
@@ -41,13 +41,21 @@ Each JSON file in `custom-gpts/` contains:
 
 ### Available GPTs
 
-| GPT | Role | Tools |
+| GPT | Skills | Tools |
 |---|---|---|
-| Full Stack Developer GPT | Builds complete web apps, frontend to deployment | Web Browsing, Code Interpreter |
-| Code Reviewer GPT | Reviews code for bugs, security, performance | Web Browsing, File Uploads |
-| DevOps Engineer GPT | CI/CD, cloud infra, Kubernetes, monitoring | Web Browsing, Code Interpreter |
-| TDD Developer GPT | Test-first development, Red-Green-Refactor | Code Interpreter, File Uploads |
-| Software Architect GPT | System design, ADRs, architecture decisions | Web Browsing, DALL-E, Code Interpreter |
+| **Architecture & Design Pro** | Clean Architecture, DDD, system design, refactoring, team topologies, UI/UX | Web Browsing, DALL-E, Code Interpreter |
+| **Frontend Development Pro** | TypeScript, Three.js, Tailwind, SvelteKit, tRPC, TanStack Query, Zustand | Web Browsing, Code Interpreter |
+| **Backend & API Pro** | API design, Supabase, message queues, vector databases, Terraform | Web Browsing, Code Interpreter |
+| **Mobile & iOS Pro** | Swift, SwiftUI, iOS patterns, concurrency, performance, debugging | Web Browsing, Code Interpreter |
+| **Project Management Pro** | OKRs, PRDs, user stories, sprint planning, GTM, market sizing, pricing | Web Browsing, Code Interpreter |
+| **DevOps & Cloud Pro** | GCP, Docker, Kubernetes, BigQuery, Cloud Run, CI/CD | Web Browsing, Code Interpreter |
+| **Security & Testing Pro** | OWASP, API security, JWT, XSS, SQL injection, container scanning | Web Browsing, Code Interpreter |
+| **Code Quality & Review Pro** | Code review, TDD, debugging, domain modeling | Code Interpreter, File Uploads |
+| **AI & LLM Pro** | Claude API, Gemini API, MCP, skill creation, transformers | Web Browsing, Code Interpreter |
+| **Documentation & Design Pro** | Figma, docs, spreadsheets, slides, brand design | Web Browsing, DALL-E, Code Interpreter |
+| **Git & Workflow Pro** | Git workflow, conventional commits, CI/CD, shipping | Web Browsing, Code Interpreter |
+| **Browser & Debugging Pro** | Playwright, web testing, Sentry, debugging | Web Browsing, Code Interpreter |
+| **Developer Productivity Pro** | Obsidian, teaching, diagnostics, handoff | Web Browsing, Code Interpreter |
 
 ## Quick Start
 
